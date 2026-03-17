@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!Ciparay html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +7,21 @@ html, body {
   margin: 0;
   padding: 0;
   background: transparent;
-  height: 100%;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 .video-container {
   width: 100%;
-  max-width: 480px;
-  margin: auto;
+  max-width: 480px; /* ini bikin kecil di HP */
+  aspect-ratio: 16/9;
+  background: transparent;
 }
 video {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  object-fit: contain;
 }
 </style>
 </head>
